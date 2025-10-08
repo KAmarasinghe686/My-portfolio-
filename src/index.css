@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+:root {
+  --bg: #0E0A28;
+  --panel: #15123A;
+  --accent: #00BFFF;
+  --white: #fff;
+  --muted: #c5c8ff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--bg);
+  color: var(--white);
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  width: min(1100px, 90%);
+  margin: 0 auto;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 60px 0;
+}
+
+.header h1 {
+  color: var(--accent);
+  font-size: 2.5rem;
+}
+
+.hire-btn {
+  background: var(--accent);
+  color: white;
+  padding: 10px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.header-img img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 3px solid var(--accent);
+  box-shadow: 0 0 20px #00bfff77;
+}
+
+/* About */
+.about {
+  background: var(--panel);
+  border-radius: 15px;
+  padding: 100px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.about-inner {
+  display:flex;
+  gap: 30px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.about-avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 2px solid var(--accent);
+}
+
+.about-text {
+  flex: 1;
+  color: var(--muted);
+  
+}
+
+/* Projects */
+.projects {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.project-grid {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.project-card {
+  background: var(--panel);
+  padding: 20px;
+  border-radius: 10px;
+  width: 250px;
+}
+
+.project-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* Contact */
+.contact {
+  background: var(--panel);
+  border-radius: 12px;
+  padding: 60px;
+  text-align: center;
+  margin-top: 100px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+input, textarea {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+button[type="submit"] {
+  background: var(--accent);
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background: #0094cc;
+}
