@@ -20,9 +20,9 @@ export default function Footer() {
         <div className="footer-section">
           <h4>Connect With Me</h4>
           <div className="social-links">
-            <a href="#" aria-label="LinkedIn">LinkedIn</a>
-            <a href="#" aria-label="GitHub">GitHub</a>
-            <a href="#" aria-label="Instagram">Instagram</a>
+            <a href="#" aria-label="http://linkedin.com/in/kavindya-amarasinghe-429966310">LinkedIn</a>
+            <a href="https://github.com/KAmarasinghe686/" aria-label="GitHub">GitHub</a>
+            <a href="https://www.instagram.com/?__pwa=1" aria-label="Instagram">Instagram</a>
             {/* Twitter removed */}
           </div>
         </div>
