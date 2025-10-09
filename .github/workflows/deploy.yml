@@ -46,3 +46,16 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      
+      - name: Disable Jekyll  # Add this step
+        run: touch .nojekyll
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        # ... rest of your workflow
