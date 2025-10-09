@@ -25,7 +25,15 @@ export default function Header() {
       </div>
 
       <div className="header-img">
-        <img src={profile} alt="Kavindya" />
+        <img 
+          src={profile} 
+          alt="Kavindya" 
+          style={{ 
+            width: '100%', 
+            height: '100%', 
+            objectFit: 'contain' /* This prevents compression */
+          }} 
+        />
       </div>
     </header>
   );
